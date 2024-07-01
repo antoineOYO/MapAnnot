@@ -4,7 +4,7 @@ import folium
 hash_value = 'etoile'
 
 # Create a map centered on Lyon, France
-map_lyon = folium.Map(location=[45.75, 4.85], zoom_start=13)
+map = folium.Map(location=[45.75, 4.85], zoom_start=13)
 
 # HTML for the popup with a form to input the annotation, tickboxes, and include the hash value as a hidden input
 html = f"""
@@ -32,7 +32,7 @@ html = f"""
 folium.Marker(
     location=[45.75, 4.85],
     popup=folium.Popup(html, max_width=300)
-).add_to(map_lyon)
+).add_to(map)
 
 # Save the map to an HTML file
-map_lyon.save('map_with_annotation.html')
+map.save('map_with_annotation.html')
