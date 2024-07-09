@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0e34b2f18349782d9838682f0363a2dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0e34b2f18349782d9838682f0363a2dd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0e34b2f18349782d9838682f0363a2dd = L.map(
+                "map_0e34b2f18349782d9838682f0363a2dd",
+                {
+                    center: [48.8566, 2.3522],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3582ced40a96061dbbf80bbf045e5eb6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_3582ced40a96061dbbf80bbf045e5eb6.addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var marker_6296fea341e9050a546b76d8003c93b3 = L.marker(
+                [49.698353, 4.874814],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_5f35d09e820756c99641149714ed34a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6296fea341e9050a546b76d8003c93b3.setIcon(icon_5f35d09e820756c99641149714ed34a9);
+        
+    
+        var popup_db7cebc46a315dc10f0cada6919dc5f1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_09bb1853dbfd035a699f80614f901804 = $(`<div id="html_09bb1853dbfd035a699f80614f901804" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/215" target="_blank"><strong>5/215/DONCHERY</strong></a>                     <p style="color: #555;">DONCHERY, (Géog. mod.) ville de la Champagne en France : elle est située sur la Meuse, dans le Rhetelois. Long. 22d. 32'. 56". lat. 49d. 41'. 51"....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q378559" target="_blank">Donchery</a>, commune in Ardennes, France, Q378559</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q3096387" target="_blank">Gare de Donchery</a>, railway station in Donchery, France, Q3096387</p>                 </body>             </html>             </div>`)[0];
+                popup_db7cebc46a315dc10f0cada6919dc5f1.setContent(html_09bb1853dbfd035a699f80614f901804);
+            
+        
+
+        marker_6296fea341e9050a546b76d8003c93b3.bindPopup(popup_db7cebc46a315dc10f0cada6919dc5f1)
+        ;
+
+        
+    
+    
+            var marker_6ca0a5e3ecdf6bdd225d6f2f94c3493a = L.marker(
+                [46.211054, 1.07919],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_9fc0d4550346c2b04f454db3d19aa17a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_6ca0a5e3ecdf6bdd225d6f2f94c3493a.setIcon(icon_9fc0d4550346c2b04f454db3d19aa17a);
+        
+    
+        var popup_e0223ff432eae5180a952a6684d12286 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fd04ac18ffa1cfc66586749b7643b106 = $(`<div id="html_fd04ac18ffa1cfc66586749b7643b106" style="width: 100.0%; height: 100.0%;">             <!DOCTYPE html>             <html>             <head>             <title>Marker Popup</title>             </head>             <body>             <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/243" target="_blank"><strong>5/243/DORAR</strong></a>             <p style="color: #555;">DORAR, (Géog. mod.) ville de la Marche, en France. Elle est située sur la Sere. Longit. 18. 46. lat. 46. 10....</p>             <p> <strong> N°0 : <a href="https://www.wikidata.org/wiki/Q970213" target="_blank">Gare du Dorat</a>, railway station, Q970213</p>             <form action="http://localhost:5000/save_annotation" method="post" target="hidden_iframe">                 <label><input type="checkbox" name="correct" value="correct"> Correct</label><br>                 <label><input type="checkbox" name="wrong" value="wrong"> Wrong</label><br>                 <label><input type="checkbox" name="abberant" value="abberant"> Abberant</label><br>                 <label for="annotation">Annotation suggérée : </label><br>                 <textarea id="annotation" name="annotation" rows="1" cols="30"></textarea><br>                 <input type="hidden" id="hash" name="hash" value="5/243/DORAR">                 <label for="note">Remarque : </label><br>                 <textarea id="note" name="note" rows="1" cols="30"></textarea><br>                 <input type="submit" value="Sauvegarder">             <p><strong> Other predictions :</strong> </p>                              <p> N°1 : <a href="https://www.wikidata.org/wiki/Q1725792" target="_blank">canton of Le Dorat</a>, canton of France, Q1725792</p>                                  <p> N°2 : <a href="https://www.wikidata.org/wiki/Q117045" target="_blank">Dorlar</a>, human settlement in Germany, Q117045</p>                                  <p> N°3 : <a href="https://www.wikidata.org/wiki/Q60478718" target="_blank">Borar</a>, human settlement in Bagnan II community development block, Uluberia subdivision, Howrah district, India, Q60478718</p>                                  <p> N°4 : <a href="https://www.wikidata.org/wiki/Q60817595" target="_blank">Korar</a>, None, Q60817595</p>                                  <p> N°5 : <a href="https://www.wikidata.org/wiki/Q831392" target="_blank">Dorlar</a>, None, Q831392</p>                                  <p> N°6 : <a href="https://www.wikidata.org/wiki/Q1253034" target="_blank">Dowar Islet</a>, island in Queensland, Australia, Q1253034</p>                                  <p> N°7 : <a href="https://www.wikidata.org/wiki/Q21566516" target="_blank">Dörarp</a>, district in Ljungby Municipality, Sweden, Q21566516</p>                                  <p> N°8 : <a href="https://www.wikidata.org/wiki/Q61040967" target="_blank">Doras Ruh</a>, special protection area in the EU defined by the birds directive in Saxony, Germany, Q61040967</p>                                  <p> N°9 : <a href="https://www.wikidata.org/wiki/Q60646740" target="_blank">Doras Ruh</a>, protected area in the European Union defined by the habitats directive in Sachsen, Germany, Q60646740</p>                              </form>             <iframe name="hidden_iframe" style="display:none;"></iframe>             </body>             </html>             </div>`)[0];
+                popup_e0223ff432eae5180a952a6684d12286.setContent(html_fd04ac18ffa1cfc66586749b7643b106);
+            
+        
+
+        marker_6ca0a5e3ecdf6bdd225d6f2f94c3493a.bindPopup(popup_e0223ff432eae5180a952a6684d12286)
+        ;
+
+        
+    
+    
+            var marker_59003fd3b0d64b91bbf0f839222725d7 = L.marker(
+                [33.812796, -117.918971],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_dfbcd6cc775b14af0f0e20aaa92416d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59003fd3b0d64b91bbf0f839222725d7.setIcon(icon_dfbcd6cc775b14af0f0e20aaa92416d0);
+        
+    
+        var popup_cf66e719dea75112d51de09428209a73 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1645fe336c0125df43704120a40dceb6 = $(`<div id="html_1645fe336c0125df43704120a40dceb6" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/267" target="_blank"><strong>5/267/Dormant</strong></a>                     <p style="color: #555;">Dormant, (Géog. mod.) ville de la Champagne en France ; elle est située sur la Marne. Long. 21. 22. lat. 49. 3....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q833380" target="_blank">Dormans</a>, commune in Marne, France, Q833380</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2746222" target="_blank">Sleeping Beauty Castle</a>, castle at Disneyland, Q2746222</p>                 </body>             </html>             </div>`)[0];
+                popup_cf66e719dea75112d51de09428209a73.setContent(html_1645fe336c0125df43704120a40dceb6);
+            
+        
+
+        marker_59003fd3b0d64b91bbf0f839222725d7.bindPopup(popup_cf66e719dea75112d51de09428209a73)
+        ;
+
+        
+    
+    
+            var marker_36bacfc6b848524e0b92cb13e7b00a56 = L.marker(
+                [50.156666666666666, 2.3402777777777777],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_67df1eaf3c2993f7f3044e1ab3ce0527 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_36bacfc6b848524e0b92cb13e7b00a56.setIcon(icon_67df1eaf3c2993f7f3044e1ab3ce0527);
+        
+    
+        var popup_8a007dde824579d89a3b99b82690df9c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e7acbd2cca528ee53b2fbd5b897603f0 = $(`<div id="html_e7acbd2cca528ee53b2fbd5b897603f0" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/416" target="_blank"><strong>5/416/DOULENS ou DOURLENS</strong></a>                     <p style="color: #555;">DOULENS ou DOURLENS, (Géog. mod.) ville de la Picardie en France ; elle est située sur l'Anthie....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q69055" target="_blank">Doullens</a>, commune in Somme, France, Q69055</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1725195" target="_blank">canton of Doullens</a>, canton of France, Q1725195</p>                 </body>             </html>             </div>`)[0];
+                popup_8a007dde824579d89a3b99b82690df9c.setContent(html_e7acbd2cca528ee53b2fbd5b897603f0);
+            
+        
+
+        marker_36bacfc6b848524e0b92cb13e7b00a56.bindPopup(popup_8a007dde824579d89a3b99b82690df9c)
+        ;
+
+        
+    
+    
+            var marker_e3be20e5b72827fe10edefdf421a3c3c = L.marker(
+                [45.07305556, 4.82722222],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_98b49fb4ac1d9fa96ef0e8750a1881bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3be20e5b72827fe10edefdf421a3c3c.setIcon(icon_98b49fb4ac1d9fa96ef0e8750a1881bb);
+        
+    
+        var popup_ef27b86e698b85c14df02030faa666da = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_24be2417976a1680505c75018b3b26e0 = $(`<div id="html_24be2417976a1680505c75018b3b26e0" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/447" target="_blank"><strong>5/447/Doux (le)</strong></a>                     <p style="color: #555;">Doux, (le) Géog. mod. riviere de la Franche-Comté en France : elle prend sa source au mont Jura, & se jette dans la Saone en Bourgogne....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q14372" target="_blank">Doubs</a>, river in Switzerland and France, Q14372</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1252810" target="_blank">Doux</a>, watercourse, Q1252810</p>                 </body>             </html>             </div>`)[0];
+                popup_ef27b86e698b85c14df02030faa666da.setContent(html_24be2417976a1680505c75018b3b26e0);
+            
+        
+
+        marker_e3be20e5b72827fe10edefdf421a3c3c.bindPopup(popup_ef27b86e698b85c14df02030faa666da)
+        ;
+
+        
+    
+    
+            var marker_5a16586c3010c5d3b7c98d0964772a2b = L.marker(
+                [43.539444444, 6.466111111],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_69b58b03295c9bb8fed1694c9bfb3b68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5a16586c3010c5d3b7c98d0964772a2b.setIcon(icon_69b58b03295c9bb8fed1694c9bfb3b68);
+        
+    
+        var popup_45ac8e2d9f9118d692ddaf5bca660d34 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6d02dfa918367c83142286b705b8d0ba = $(`<div id="html_6d02dfa918367c83142286b705b8d0ba" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/515" target="_blank"><strong>5/515/DRAGUIGNAN</strong></a>                     <p style="color: #555;">DRAGUIGNAN, (Géog. mod.) ville de France, en Provence, sur la riviere de Pis. Longit. 24. 14. lat. 43. 34....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q194141" target="_blank">Draguignan</a>, commune in Var, France, Q194141</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1725197" target="_blank">canton of Draguignan</a>, canton of France, Q1725197</p>                 </body>             </html>             </div>`)[0];
+                popup_45ac8e2d9f9118d692ddaf5bca660d34.setContent(html_6d02dfa918367c83142286b705b8d0ba);
+            
+        
+
+        marker_5a16586c3010c5d3b7c98d0964772a2b.bindPopup(popup_45ac8e2d9f9118d692ddaf5bca660d34)
+        ;
+
+        
+    
+    
+            var marker_bcff5b21d51cfde97a783fb7096eaa83 = L.marker(
+                [57.794630555556, -8.5529611111111],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_ba77a29934c49337cf28b47e92d573d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bcff5b21d51cfde97a783fb7096eaa83.setIcon(icon_ba77a29934c49337cf28b47e92d573d7);
+        
+    
+        var popup_a492637384a9e015634eb2896cd936b4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_abe6c578aaf2f0d1e2b7b2cf38e766a4 = $(`<div id="html_abe6c578aaf2f0d1e2b7b2cf38e766a4" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/741" target="_blank"><strong>5/741/DUN</strong></a>                     <p style="color: #555;">DUN, (Géog. mod.) ville de France, au duché de Bar, sur la Meuse. Long. 22. 52. lat. 49. 22....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q913049" target="_blank">Dun-sur-Meuse</a>, commune in Meuse, France, Q913049</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1271573" target="_blank">Dùn</a>, island of St Kilda, Outer Hebrides, Scotland, UK, Q1271573</p>                 </body>             </html>             </div>`)[0];
+                popup_a492637384a9e015634eb2896cd936b4.setContent(html_abe6c578aaf2f0d1e2b7b2cf38e766a4);
+            
+        
+
+        marker_bcff5b21d51cfde97a783fb7096eaa83.bindPopup(popup_a492637384a9e015634eb2896cd936b4)
+        ;
+
+        
+    
+    
+            var marker_c734b45efb6f23d59eae4d9c29e826ff = L.marker(
+                [57.794630555556, -8.5529611111111],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_0345d40cb51bf9b1b1ba60c538f85cfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c734b45efb6f23d59eae4d9c29e826ff.setIcon(icon_0345d40cb51bf9b1b1ba60c538f85cfc);
+        
+    
+        var popup_d6ad7670eb4f2d26b76df65daa9a3f26 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8751fdce6ca7aa775e10b70cb811c9c0 = $(`<div id="html_8751fdce6ca7aa775e10b70cb811c9c0" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/742" target="_blank"><strong>5/742/Dun-le-Roi</strong></a>                     <p style="color: #555;">Dun-le-Roi, (Géog. mod.) ville de France, dans le Berry, sur l'Aurone. Longit. 20d. 14'. 6''. lat. 46d. 53'. 5''....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q817409" target="_blank">Dun-sur-Auron</a>, commune in Cher, France, Q817409</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1271573" target="_blank">Dùn</a>, island of St Kilda, Outer Hebrides, Scotland, UK, Q1271573</p>                 </body>             </html>             </div>`)[0];
+                popup_d6ad7670eb4f2d26b76df65daa9a3f26.setContent(html_8751fdce6ca7aa775e10b70cb811c9c0);
+            
+        
+
+        marker_c734b45efb6f23d59eae4d9c29e826ff.bindPopup(popup_d6ad7670eb4f2d26b76df65daa9a3f26)
+        ;
+
+        
+    
+    
+            var marker_fd32d711a0ec222735f1cd68ae2068d7 = L.marker(
+                [48.8319, 2.36806],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_6c58b1aa2a9e16ccc02b12e24743791c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd32d711a0ec222735f1cd68ae2068d7.setIcon(icon_6c58b1aa2a9e16ccc02b12e24743791c);
+        
+    
+        var popup_e86cc1a3eb223946cf94684eac262856 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_dd9b0cb3e49858db5ccdf1f20a60d71c = $(`<div id="html_dd9b0cb3e49858db5ccdf1f20a60d71c" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/762" target="_blank"><strong>5/762/DUNOIS (le)</strong></a>                     <p style="color: #555;">DUNOIS (le), Géog. contrée de France, dans la Beauce, avec titre de comté; Châteaudun en est la capitale....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q3041374" target="_blank">None</a>, None, Q3041374</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q3447739" target="_blank">rue Dunois</a>, street in Paris, France, Q3447739</p>                 </body>             </html>             </div>`)[0];
+                popup_e86cc1a3eb223946cf94684eac262856.setContent(html_dd9b0cb3e49858db5ccdf1f20a60d71c);
+            
+        
+
+        marker_fd32d711a0ec222735f1cd68ae2068d7.bindPopup(popup_e86cc1a3eb223946cf94684eac262856)
+        ;
+
+        
+    
+    
+            var marker_8d7519a04894faa6ae848b614f27f631 = L.marker(
+                [44.666667, 0.183333],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_642dbe833d2d153d87be89f991adcb53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8d7519a04894faa6ae848b614f27f631.setIcon(icon_642dbe833d2d153d87be89f991adcb53);
+        
+    
+        var popup_71e262847cc931c44833e9939d433234 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_183f6b4a0c06302a9283ba9e56454fa0 = $(`<div id="html_183f6b4a0c06302a9283ba9e56454fa0" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/781" target="_blank"><strong>5/781/DURAS</strong></a>                     <p style="color: #555;">DURAS, (Géog. mod.) ville de France en Guienne, dans l'Agénois : elle est sur une riviere qui se jette dans le Dort ; elle a titre de duché. Long. 17....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q129770" target="_blank">Duras</a>, commune in Lot-et-Garonne, France, Q129770</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q738206" target="_blank">canton of Duras</a>, canton of France (until March 2015), Q738206</p>                 </body>             </html>             </div>`)[0];
+                popup_71e262847cc931c44833e9939d433234.setContent(html_183f6b4a0c06302a9283ba9e56454fa0);
+            
+        
+
+        marker_8d7519a04894faa6ae848b614f27f631.bindPopup(popup_71e262847cc931c44833e9939d433234)
+        ;
+
+        
+    
+    
+            var marker_d538916d77e3a1b22812a69fe6f205d0 = L.marker(
+                [44.5163, 1.07954],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_62da8b2fbba7bf25800b6e0ec1e7831c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d538916d77e3a1b22812a69fe6f205d0.setIcon(icon_62da8b2fbba7bf25800b6e0ec1e7831c);
+        
+    
+        var popup_5a18680af19623f170a1792d2257b79b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_026634a94e36a110fd04818378efc161 = $(`<div id="html_026634a94e36a110fd04818378efc161" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/782" target="_blank"><strong>5/782/DURAVEL</strong></a>                     <p style="color: #555;">DURAVEL, (Géog. mod.) ville du Quercy en France ; elle est sur le Lot, aux confins de l'Agénois. Long. 18. 40. lat. 45. 40....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q831444" target="_blank">Duravel</a>, commune in Lot, France, Q831444</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q16008493" target="_blank">Église Saint-Hilarion de Duravel</a>, church located in Lot, in France, Q16008493</p>                 </body>             </html>             </div>`)[0];
+                popup_5a18680af19623f170a1792d2257b79b.setContent(html_026634a94e36a110fd04818378efc161);
+            
+        
+
+        marker_d538916d77e3a1b22812a69fe6f205d0.bindPopup(popup_5a18680af19623f170a1792d2257b79b)
+        ;
+
+        
+    
+    
+            var marker_eb8eed6831690968c10b788523775154 = L.marker(
+                [47.671944444444, -0.24138888888889],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_25f79911d2ac046b4029d760b9ba2ff4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb8eed6831690968c10b788523775154.setIcon(icon_25f79911d2ac046b4029d760b9ba2ff4);
+        
+    
+        var popup_44cd675d59cc4dc54013f8603a3bf914 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_fdbf6d70f228c92522b241a241fa1e3e = $(`<div id="html_fdbf6d70f228c92522b241a241fa1e3e" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/790" target="_blank"><strong>5/790/DURETAL</strong></a>                     <p style="color: #555;">DURETAL, (Géog. mod.) petite ville d'Anjou en France. Elle est sur le Loir....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q819837" target="_blank">Durtal</a>, commune in Maine-et-Loire, France, Q819837</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q819837" target="_blank">Durtal</a>, commune in Maine-et-Loire, France, Q819837</p>                 </body>             </html>             </div>`)[0];
+                popup_44cd675d59cc4dc54013f8603a3bf914.setContent(html_fdbf6d70f228c92522b241a241fa1e3e);
+            
+        
+
+        marker_eb8eed6831690968c10b788523775154.bindPopup(popup_44cd675d59cc4dc54013f8603a3bf914)
+        ;
+
+        
+    
+    
+            var marker_90b8d7130896e031c4fc19802058047d = L.marker(
+                [46.11638889, 3.0875],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_030102f2fd96d7ba930bc3283d7cddff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_90b8d7130896e031c4fc19802058047d.setIcon(icon_030102f2fd96d7ba930bc3283d7cddff);
+        
+    
+        var popup_d948df7272d5161800b97ebd9bb97a5a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6cc0965d1e432a4c1479d49446fae2a1 = $(`<div id="html_6cc0965d1e432a4c1479d49446fae2a1" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/930" target="_blank"><strong>5/930/EBREUIL</strong></a>                     <p style="color: #555;">EBREUIL, (Géogr. mod.) ville d'Auvergne en France ; elle est sur la Scioule. Long. 20. 40. latit. 46. 5....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q273297" target="_blank">Ébreuil</a>, commune in Allier, France, Q273297</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q282500" target="_blank">canton of Ébreuil</a>, canton of France (until March 2015), Q282500</p>                 </body>             </html>             </div>`)[0];
+                popup_d948df7272d5161800b97ebd9bb97a5a.setContent(html_6cc0965d1e432a4c1479d49446fae2a1);
+            
+        
+
+        marker_90b8d7130896e031c4fc19802058047d.bindPopup(popup_d948df7272d5161800b97ebd9bb97a5a)
+        ;
+
+        
+    
+    
+            var marker_55a03d8b9eee90407842b628a1144969 = L.marker(
+                [49.30258125, 0.991238],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_cedca74bc08d0bbe028231670236d514 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_55a03d8b9eee90407842b628a1144969.setIcon(icon_cedca74bc08d0bbe028231670236d514);
+        
+    
+        var popup_39a108715591bd446d9b112045df609d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_249c98d10d57f1e2a6ff7dc6b5dfd026 = $(`<div id="html_249c98d10d57f1e2a6ff7dc6b5dfd026" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/1715" target="_blank"><strong>5/1715/ELBEUF</strong></a>                     <p style="color: #555;">ELBEUF, (Géog. mod.) gros bourg de Normandie, en France ; il a titre de duché-pairie : il est situé sur la Seine. Long. 18. 38. lat. 49. 20....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q733414" target="_blank">Elbeuf</a>, commune in Seine-Maritime, France, Q733414</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1250972" target="_blank">canton of Elbeuf</a>, canton of France, Q1250972</p>                 </body>             </html>             </div>`)[0];
+                popup_39a108715591bd446d9b112045df609d.setContent(html_249c98d10d57f1e2a6ff7dc6b5dfd026);
+            
+        
+
+        marker_55a03d8b9eee90407842b628a1144969.bindPopup(popup_39a108715591bd446d9b112045df609d)
+        ;
+
+        
+    
+    
+            var marker_eb9a081d41bf2c610af253e5ec084f33 = L.marker(
+                [42.59711111111111, 2.963861111111111],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_c1c6d667f1841847efe25d035115b9f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eb9a081d41bf2c610af253e5ec084f33.setIcon(icon_c1c6d667f1841847efe25d035115b9f9);
+        
+    
+        var popup_bf4c5040af038e9bee72128c30be6626 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6a4d72c26be2fedba9f3fc9c9549c789 = $(`<div id="html_6a4d72c26be2fedba9f3fc9c9549c789" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/1831" target="_blank"><strong>5/1831/ELNE</strong></a>                     <p style="color: #555;">ELNE, (Géog. mod.) ville du Roussillon en France ; elle est sur le Tech proche la Méditerranée. Long. 20. 40. lat. 42. 30....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q23073" target="_blank">Elne</a>, commune in Pyrénées-Orientales, France, Q23073</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2016019" target="_blank">Gare d'Elne</a>, railway station in France, Q2016019</p>                 </body>             </html>             </div>`)[0];
+                popup_bf4c5040af038e9bee72128c30be6626.setContent(html_6a4d72c26be2fedba9f3fc9c9549c789);
+            
+        
+
+        marker_eb9a081d41bf2c610af253e5ec084f33.bindPopup(popup_bf4c5040af038e9bee72128c30be6626)
+        ;
+
+        
+    
+    
+            var marker_aa00903214e66a245a4061907ccf1b5e = L.marker(
+                [44.565, 6.495277777],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_9be64325b07b77f6e00459e147fe77e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aa00903214e66a245a4061907ccf1b5e.setIcon(icon_9be64325b07b77f6e00459e147fe77e1);
+        
+    
+        var popup_cf5425eb561c8b5f79f36d59294a9c3c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a048698ba0bd17f0333d2884e393dd21 = $(`<div id="html_a048698ba0bd17f0333d2884e393dd21" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/2016" target="_blank"><strong>5/2016/EMBRUN ou AMBRUN</strong></a>                     <p style="color: #555;">EMBRUN ou AMBRUN, (Géog. mod.) ville du Dauphiné en France, elle est située proche de la Durance sur un rocher escarpé. Long. 24d 9'0", lat. 44d 34'0"...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q207610" target="_blank">Embrun</a>, commune in Hautes-Alpes, France, Q207610</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q578071" target="_blank">canton of Embrun</a>, canton of France, Q578071</p>                 </body>             </html>             </div>`)[0];
+                popup_cf5425eb561c8b5f79f36d59294a9c3c.setContent(html_a048698ba0bd17f0333d2884e393dd21);
+            
+        
+
+        marker_aa00903214e66a245a4061907ccf1b5e.bindPopup(popup_cf5425eb561c8b5f79f36d59294a9c3c)
+        ;
+
+        
+    
+    
+            var marker_574031f183628befcb093b5928afbcac = L.marker(
+                [47.865555555, 7.3525],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_d8ad7621596b7b640584e90845703313 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_574031f183628befcb093b5928afbcac.setIcon(icon_d8ad7621596b7b640584e90845703313);
+        
+    
+        var popup_4d1f10ee4ed5868619565c0088e77961 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_852d38f3b645fb3c72c7cd0b588adb0e = $(`<div id="html_852d38f3b645fb3c72c7cd0b588adb0e" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/2636" target="_blank"><strong>5/2636/ENSISHEIM</strong></a>                     <p style="color: #555;">ENSISHEIM, (Géog. mod.) ville de la haute Alsace, en France. Elle est située sur l'Ill. Long. 25d. 1'. 55". lat. 47d. 51'. 2"....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q455645" target="_blank">Ensisheim</a>, commune in Haut-Rhin, France, Q455645</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1395248" target="_blank">canton of Ensisheim</a>, canton of France, Q1395248</p>                 </body>             </html>             </div>`)[0];
+                popup_4d1f10ee4ed5868619565c0088e77961.setContent(html_852d38f3b645fb3c72c7cd0b588adb0e);
+            
+        
+
+        marker_574031f183628befcb093b5928afbcac.bindPopup(popup_4d1f10ee4ed5868619565c0088e77961)
+        ;
+
+        
+    
+    
+            var marker_6530e159c1efd334f6d475b0bbf1c82b = L.marker(
+                [44.0053, 4.92156],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_c9045abe7624d0c6b94701a261f5121e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6530e159c1efd334f6d475b0bbf1c82b.setIcon(icon_c9045abe7624d0c6b94701a261f5121e);
+        
+    
+        var popup_db0489132d1a82d787cd4fd9c01789fe = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_990cbe5a26390607aedadf3a8d3b2479 = $(`<div id="html_990cbe5a26390607aedadf3a8d3b2479" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/2711" target="_blank"><strong>5/2711/ENTRAIGUES</strong></a>                     <p style="color: #555;">ENTRAIGUES, (Géog. mod.) ville du comté du  Rouergue en France ; elle est située à l'endroit où la Truyere se jette dans le Lot....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q651581" target="_blank">Entraygues-sur-Truyère</a>, commune in Aveyron, France, Q651581</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q16507939" target="_blank">Gare d'Entraigues-sur-la-Sorgue</a>, railway station in Entraigues-sur-la-Sorgue, France, Q16507939</p>                 </body>             </html>             </div>`)[0];
+                popup_db0489132d1a82d787cd4fd9c01789fe.setContent(html_990cbe5a26390607aedadf3a8d3b2479);
+            
+        
+
+        marker_6530e159c1efd334f6d475b0bbf1c82b.bindPopup(popup_db0489132d1a82d787cd4fd9c01789fe)
+        ;
+
+        
+    
+    
+            var marker_2c45151073f7731274c8954601575b03 = L.marker(
+                [43.94944444, 6.81083333],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_70cd348b472a2fad172c78d4d3f001e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2c45151073f7731274c8954601575b03.setIcon(icon_70cd348b472a2fad172c78d4d3f001e5);
+        
+    
+        var popup_ca0a8b154c7183a18e5124171b57c4e2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ed73c30d34a9ddf14b0041dd9ffc7aa7 = $(`<div id="html_ed73c30d34a9ddf14b0041dd9ffc7aa7" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/2752" target="_blank"><strong>5/2752/ENTREVAUX</strong></a>                     <p style="color: #555;">ENTREVAUX, (Géog.) ville de Provence, en France ; elle est située sur le Var. Long. 24. 46. lat. 44. 1....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q274678" target="_blank">Entrevaux</a>, commune in Alpes-de-Haute-Provence, France, Q274678</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q952989" target="_blank">canton of Entrevaux</a>, canton of France (until March 2015), Q952989</p>                 </body>             </html>             </div>`)[0];
+                popup_ca0a8b154c7183a18e5124171b57c4e2.setContent(html_ed73c30d34a9ddf14b0041dd9ffc7aa7);
+            
+        
+
+        marker_2c45151073f7731274c8954601575b03.bindPopup(popup_ca0a8b154c7183a18e5124171b57c4e2)
+        ;
+
+        
+    
+    
+            var marker_83c5142f0878abb245c8c84fbe697889 = L.marker(
+                [48.296944444, -0.932777777],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_eb1c3c8cda279c56c850e055b238f1ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_83c5142f0878abb245c8c84fbe697889.setIcon(icon_eb1c3c8cda279c56c850e055b238f1ca);
+        
+    
+        var popup_bb8d07df76d186915dde1fa84628752a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_61d4c3db6f8c6f497ea3d6a4c8721a3f = $(`<div id="html_61d4c3db6f8c6f497ea3d6a4c8721a3f" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/3282" target="_blank"><strong>5/3282/ERNÉE</strong></a>                     <p style="color: #555;">ERNÉE, (Géog. mod.) ville du Maine en France ; elle est située sur la riviere qui porte le même nom....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q838741" target="_blank">Ernée</a>, commune in Mayenne, France, Q838741</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1725232" target="_blank">canton of Ernée</a>, canton of France, Q1725232</p>                 </body>             </html>             </div>`)[0];
+                popup_bb8d07df76d186915dde1fa84628752a.setContent(html_61d4c3db6f8c6f497ea3d6a4c8721a3f);
+            
+        
+
+        marker_83c5142f0878abb245c8c84fbe697889.bindPopup(popup_bb8d07df76d186915dde1fa84628752a)
+        ;
+
+        
+    
+    
+            var marker_fa029d6867d4658cb69f5092576897f5 = L.marker(
+                [46.14416668, 3.26611112],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_b3ed1194322c003853468748f53a5d76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fa029d6867d4658cb69f5092576897f5.setIcon(icon_b3ed1194322c003853468748f53a5d76);
+        
+    
+        var popup_1d6deb6e4ad9089c3ef9a37baac2b7d6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_01c44f844dba6a0e34ef3a7537e7cd5c = $(`<div id="html_01c44f844dba6a0e34ef3a7537e7cd5c" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/3403" target="_blank"><strong>5/3403/ESCUROLLES</strong></a>                     <p style="color: #555;">ESCUROLLES, (Géog. mod.) petite ville du Bourbonnois, en France....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q271924" target="_blank">Escurolles</a>, commune in Allier, France, Q271924</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1309300" target="_blank">canton of Escurolles</a>, canton of France (until March 2015), Q1309300</p>                 </body>             </html>             </div>`)[0];
+                popup_1d6deb6e4ad9089c3ef9a37baac2b7d6.setContent(html_01c44f844dba6a0e34ef3a7537e7cd5c);
+            
+        
+
+        marker_fa029d6867d4658cb69f5092576897f5.bindPopup(popup_1d6deb6e4ad9089c3ef9a37baac2b7d6)
+        ;
+
+        
+    
+    
+            var marker_51de1108437807d6ecd969239b909c35 = L.marker(
+                [48.69330629, 3.55888348],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_11bbfb574578a18666796414cc72347e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51de1108437807d6ecd969239b909c35.setIcon(icon_11bbfb574578a18666796414cc72347e);
+        
+    
+        var popup_3dff69117ac4fbef970257d61827b3be = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_51028a55f69dcbe09a5f15ba23f4a5be = $(`<div id="html_51028a55f69dcbe09a5f15ba23f4a5be" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/3448" target="_blank"><strong>5/3448/ESPERNAI</strong></a>                     <p style="color: #555;">ESPERNAI, (Géog. mod.) ville de Champagne en France, sur la Marne. Longit. 21. 46. lat. 49. 2....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q205537" target="_blank">Épernay</a>, commune in Marne, France, Q205537</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1725241" target="_blank">canton of Esternay</a>, canton of France, Q1725241</p>                 </body>             </html>             </div>`)[0];
+                popup_3dff69117ac4fbef970257d61827b3be.setContent(html_51028a55f69dcbe09a5f15ba23f4a5be);
+            
+        
+
+        marker_51de1108437807d6ecd969239b909c35.bindPopup(popup_3dff69117ac4fbef970257d61827b3be)
+        ;
+
+        
+    
+    
+            var marker_3b0ce67d4b82138468af78df72e84eff = L.marker(
+                [48.605236, 1.681551],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_7409b3ec37e3dfd3d505463bb054a7a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3b0ce67d4b82138468af78df72e84eff.setIcon(icon_7409b3ec37e3dfd3d505463bb054a7a0);
+        
+    
+        var popup_54f435aaff75dd66a9ead7df30dae1fa = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_abf59ecde11cd5be4ba8ef5dcdafaafc = $(`<div id="html_abf59ecde11cd5be4ba8ef5dcdafaafc" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/3449" target="_blank"><strong>5/3449/ESPERNON</strong></a>                     <p style="color: #555;">ESPERNON, (Géog. mod.) ville de Beauce en France ; elle est située sur la Guesle. Long. 18. 20. lat. 48. 35....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q287148" target="_blank">Épernon</a>, French commune in Eure-et-Loir, Centre-Val de Loire, Q287148</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q3095869" target="_blank">Gare d'Épernon</a>, railway station in Épernon, France, Q3095869</p>                 </body>             </html>             </div>`)[0];
+                popup_54f435aaff75dd66a9ead7df30dae1fa.setContent(html_abf59ecde11cd5be4ba8ef5dcdafaafc);
+            
+        
+
+        marker_3b0ce67d4b82138468af78df72e84eff.bindPopup(popup_54f435aaff75dd66a9ead7df30dae1fa)
+        ;
+
+        
+    
+    
+            var marker_2b7dc1fa517a8c6bc2e4469ce269d940 = L.marker(
+                [43.4365, 3.25753],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_2ea0ee53ad05540b86d883f29f806e82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2b7dc1fa517a8c6bc2e4469ce269d940.setIcon(icon_2ea0ee53ad05540b86d883f29f806e82);
+        
+    
+        var popup_475dfb8c2c93ad65d89af6cb6c4ca9a7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3c2f6faabe3100502457b9df28d5434d = $(`<div id="html_3c2f6faabe3100502457b9df28d5434d" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/3462" target="_blank"><strong>5/3462/ESPONDEILLAN</strong></a>                     <p style="color: #555;">ESPONDEILLAN, (Géog. mod.) petite ville du Languedoc, en France, au diocèse de Beziers....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q180397" target="_blank">Espondeilhan</a>, commune in Hérault, France, Q180397</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q15953528" target="_blank">Église de Notre-Dame des Pins</a>, church located in Hérault, in France, Q15953528</p>                 </body>             </html>             </div>`)[0];
+                popup_475dfb8c2c93ad65d89af6cb6c4ca9a7.setContent(html_3c2f6faabe3100502457b9df28d5434d);
+            
+        
+
+        marker_2b7dc1fa517a8c6bc2e4469ce269d940.bindPopup(popup_475dfb8c2c93ad65d89af6cb6c4ca9a7)
+        ;
+
+        
+    
+    
+            var marker_e5b0555fd65b2350771f57a5243932b0 = L.marker(
+                [46.76097722, -1.23523056],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_af37670661de90e146d59840cd5b3e0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e5b0555fd65b2350771f57a5243932b0.setIcon(icon_af37670661de90e146d59840cd5b3e0e);
+        
+    
+        var popup_ab3664024f4d88c32b6a33b51b83903a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a0ec6072cf122526c54ecffa5d7c927b = $(`<div id="html_a0ec6072cf122526c54ecffa5d7c927b" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/3500" target="_blank"><strong>5/3500/ESSARTS, (les)</strong></a>                     <p style="color: #555;">ESSARTS, (les) Géog. mod. petite ville de Poitou en France....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q504931" target="_blank">Les Essarts</a>, former commune in Vendée, France, Q504931</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1404220" target="_blank">canton of Essarts</a>, canton of France (until March 2015), Q1404220</p>                 </body>             </html>             </div>`)[0];
+                popup_ab3664024f4d88c32b6a33b51b83903a.setContent(html_a0ec6072cf122526c54ecffa5d7c927b);
+            
+        
+
+        marker_e5b0555fd65b2350771f57a5243932b0.bindPopup(popup_ab3664024f4d88c32b6a33b51b83903a)
+        ;
+
+        
+    
+    
+            var marker_9e4afcb3f2d69a5f33c106730dcacffd = L.marker(
+                [42.930555555556, -1.5758333333333],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_6ad76ccfb1926837174faba6eef6947f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e4afcb3f2d69a5f33c106730dcacffd.setIcon(icon_6ad76ccfb1926837174faba6eef6947f);
+        
+    
+        var popup_1fe892b60451fbd7ecd1270ae8759982 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_24524ef692433ffffda25012b64fbc59 = $(`<div id="html_24524ef692433ffffda25012b64fbc59" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/3541" target="_blank"><strong>5/3541/ESTAIN</strong></a>                     <p style="color: #555;">ESTAIN, (Géog. mod.) ville du duché de Bar, en France. Long. 23. 18. lat. 49. 15....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q59724" target="_blank">Étain</a>, commune in Meuse, France, Q59724</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q3059375" target="_blank">Etsain</a>, human settlement in Anue, Navarre, Spain, Q3059375</p>                 </body>             </html>             </div>`)[0];
+                popup_1fe892b60451fbd7ecd1270ae8759982.setContent(html_24524ef692433ffffda25012b64fbc59);
+            
+        
+
+        marker_9e4afcb3f2d69a5f33c106730dcacffd.bindPopup(popup_1fe892b60451fbd7ecd1270ae8759982)
+        ;
+
+        
+    
+    
+            var marker_93a17e333d73a9273f3d00024dfaa632 = L.marker(
+                [48.58111111, 7.75083333],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_c3eaebfe5c1160ec223153c2a3a73188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_93a17e333d73a9273f3d00024dfaa632.setIcon(icon_c3eaebfe5c1160ec223153c2a3a73188);
+        
+    
+        var popup_80d51857b74dbe2ebac20d12a7f6e24d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9d85ec8e652c9c7d919cc7300104a74f = $(`<div id="html_9d85ec8e652c9c7d919cc7300104a74f" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/5/3567" target="_blank"><strong>5/3567/ESTAMPES</strong></a>                     <p style="color: #555;">ESTAMPES, (Géog. mod.) ville de la Beauce, en France ; elle est située sur la Suine. Long. 19. 45. lat. 48. 24....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q205584" target="_blank">Étampes</a>, commune in Essonne, France, Q205584</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q655668" target="_blank">Cabinet des estampes et des dessins</a>, museum in Strasbourg, France, Q655668</p>                 </body>             </html>             </div>`)[0];
+                popup_80d51857b74dbe2ebac20d12a7f6e24d.setContent(html_9d85ec8e652c9c7d919cc7300104a74f);
+            
+        
+
+        marker_93a17e333d73a9273f3d00024dfaa632.bindPopup(popup_80d51857b74dbe2ebac20d12a7f6e24d)
+        ;
+
+        
+    
+    
+            var marker_6dac2433867d64aa5a1c25d06e41e627 = L.marker(
+                [44.386306, 0.096077],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_e0e85d3f7e8a87ad75cdf371bfcaed4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6dac2433867d64aa5a1c25d06e41e627.setIcon(icon_e0e85d3f7e8a87ad75cdf371bfcaed4f);
+        
+    
+        var popup_80d7d6f073bf57e00f118d24ffcac37a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e24b2d414d96e5a381ba9a9ba45e2c89 = $(`<div id="html_e24b2d414d96e5a381ba9a9ba45e2c89" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/198" target="_blank"><strong>6/198/Etienne d'Argenton (Saint-)</strong></a>                     <p style="color: #555;">Etienne d'Argenton, (Saint-) Géogr. mod. ville du Berry en France : elle appartient à l'élection de la Chatre....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q735143" target="_blank">Argenton</a>, commune in Lot-et-Garonne, France, Q735143</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q19833222" target="_blank">église Saint-Étienne d'Argenton</a>, church located in Lot-et-Garonne, in France, Q19833222</p>                 </body>             </html>             </div>`)[0];
+                popup_80d7d6f073bf57e00f118d24ffcac37a.setContent(html_e24b2d414d96e5a381ba9a9ba45e2c89);
+            
+        
+
+        marker_6dac2433867d64aa5a1c25d06e41e627.bindPopup(popup_80d7d6f073bf57e00f118d24ffcac37a)
+        ;
+
+        
+    
+    
+            var marker_86c34acec576b5c422ffcffb84f3fc22 = L.marker(
+                [51.43889, 5.47444],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_f23c8103689898b9f8f94755491ce880 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86c34acec576b5c422ffcffb84f3fc22.setIcon(icon_f23c8103689898b9f8f94755491ce880);
+        
+    
+        var popup_a7afb0785546bbf32c1a5eb673e6b538 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_bd147d266d96accb0e2d485c1c317a2c = $(`<div id="html_bd147d266d96accb0e2d485c1c317a2c" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/341" target="_blank"><strong>6/341/Eu</strong></a>                     <p style="color: #555;">Eu, (Géogr. mod.) ville de la haute Normandie, en France ; elle est située dans un vallon, sur la Brile. Long. 19. 5. 3. lat. 50. 2. 52....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q211593" target="_blank">Eu</a>, commune in Seine-Maritime, France, Q211593</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2039118" target="_blank">Witte Dame</a>, building in Eindhoven, The Netherlands, Q2039118</p>                 </body>             </html>             </div>`)[0];
+                popup_a7afb0785546bbf32c1a5eb673e6b538.setContent(html_bd147d266d96accb0e2d485c1c317a2c);
+            
+        
+
+        marker_86c34acec576b5c422ffcffb84f3fc22.bindPopup(popup_a7afb0785546bbf32c1a5eb673e6b538)
+        ;
+
+        
+    
+    
+            var marker_d7b57f981d036c70024a0da6102ef992 = L.marker(
+                [46.175, 2.4861111111111],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_948c3e25fd25831d272b64a3173a22b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7b57f981d036c70024a0da6102ef992.setIcon(icon_948c3e25fd25831d272b64a3173a22b0);
+        
+    
+        var popup_c3002473d6b2726c1b510f06fbe7cb6d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5a01699ecccbdc7f83965c9ae8a96ae7 = $(`<div id="html_5a01699ecccbdc7f83965c9ae8a96ae7" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/365" target="_blank"><strong>6/365/EVAUX</strong></a>                     <p style="color: #555;">EVAUX, (Géog. mod.) ville du Bourbonnois, en France. Long. 20. 10. lat. 46. 15....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q291343" target="_blank">Évaux-les-Bains</a>, commune in Creuse, France, Q291343</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q291343" target="_blank">Évaux-les-Bains</a>, commune in Creuse, France, Q291343</p>                 </body>             </html>             </div>`)[0];
+                popup_c3002473d6b2726c1b510f06fbe7cb6d.setContent(html_5a01699ecccbdc7f83965c9ae8a96ae7);
+            
+        
+
+        marker_d7b57f981d036c70024a0da6102ef992.bindPopup(popup_c3002473d6b2726c1b510f06fbe7cb6d)
+        ;
+
+        
+    
+    
+            var marker_d4d9669058aa21fb97197e60daa661c3 = L.marker(
+                [48.8327, 2.3217],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_b70f1744b9a0310ac257f5e86a978fa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d4d9669058aa21fb97197e60daa661c3.setIcon(icon_b70f1744b9a0310ac257f5e86a978fa9);
+        
+    
+        var popup_6020ee8e3ebc300d3a35931c13935a00 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_faeb6345502edbca721f0f76f753f387 = $(`<div id="html_faeb6345502edbca721f0f76f753f387" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/470" target="_blank"><strong>6/470/EURE</strong></a>                     <p style="color: #555;">EURE, (Géog. mod.) riviere qui prend sa source au Perche, en France ; elle se jette dans la Seine, un peu au-dessus du Pont-de-l'Arche....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q23798" target="_blank">Eure</a>, river in France, Q23798</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q3451253" target="_blank">rue de l'Eure</a>, street in Paris, France, Q3451253</p>                 </body>             </html>             </div>`)[0];
+                popup_6020ee8e3ebc300d3a35931c13935a00.setContent(html_faeb6345502edbca721f0f76f753f387);
+            
+        
+
+        marker_d4d9669058aa21fb97197e60daa661c3.bindPopup(popup_6020ee8e3ebc300d3a35931c13935a00)
+        ;
+
+        
+    
+    
+            var marker_9d195374b9d08107370d9e5407790c60 = L.marker(
+                [49.024444, 1.151111],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_865378450ad4186a4bd68e3d2a30acd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9d195374b9d08107370d9e5407790c60.setIcon(icon_865378450ad4186a4bd68e3d2a30acd5);
+        
+    
+        var popup_8fad98e879a5de3a00fc427da9f5818f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3b0658308b722ef4df553a1a837497fb = $(`<div id="html_3b0658308b722ef4df553a1a837497fb" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/472" target="_blank"><strong>6/472/EVREUX</strong></a>                     <p style="color: #555;">EVREUX, (Géog. mod.) ville de la haute Normandie, en France ; elle est située sur l'Iton. Long. 17. 48. 39. lat. 49. 1. 24....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q171800" target="_blank">Évreux</a>, commune in Eure, France, Q171800</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1728057" target="_blank">canton of Évreux-Est</a>, canton of France, Q1728057</p>                 </body>             </html>             </div>`)[0];
+                popup_8fad98e879a5de3a00fc427da9f5818f.setContent(html_3b0658308b722ef4df553a1a837497fb);
+            
+        
+
+        marker_9d195374b9d08107370d9e5407790c60.bindPopup(popup_8fad98e879a5de3a00fc427da9f5818f)
+        ;
+
+        
+    
+    
+            var marker_1824d383f0ef40c6175fe88cec41c7af = L.marker(
+                [44.70621212, 0.44396465],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_85bce2f449aab08200c18018ae13cadb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1824d383f0ef40c6175fe88cec41c7af.setIcon(icon_85bce2f449aab08200c18018ae13cadb);
+        
+    
+        var popup_dab1c1a11229eddf265b0959bb2285c5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5d6ba03cb69b44bbb3c6cc8b18412ba7 = $(`<div id="html_5d6ba03cb69b44bbb3c6cc8b18412ba7" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/831" target="_blank"><strong>6/831/EYMET</strong></a>                     <p style="color: #555;">EYMET, (Géog. mod.) petite ville du Périgord en France ; elle appartient au Sarladois ; elle est située  sur le Drot....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q864102" target="_blank">Eymet</a>, commune in Dordogne, France, Q864102</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q953217" target="_blank">canton of Eymet</a>, canton of France (until March 2015), Q953217</p>                 </body>             </html>             </div>`)[0];
+                popup_dab1c1a11229eddf265b0959bb2285c5.setContent(html_5d6ba03cb69b44bbb3c6cc8b18412ba7);
+            
+        
+
+        marker_1824d383f0ef40c6175fe88cec41c7af.bindPopup(popup_dab1c1a11229eddf265b0959bb2285c5)
+        ;
+
+        
+    
+    
+            var marker_eed64250e9f0e534d7833edb5583df6c = L.marker(
+                [45.90179182, 3.23266591],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_b6861af33d45d6e7528836a2d67133d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eed64250e9f0e534d7833edb5583df6c.setIcon(icon_b6861af33d45d6e7528836a2d67133d1);
+        
+    
+        var popup_16fc040b0efaa206520a968f2c25ce0b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8820d2540ee542f243de96adc68791e6 = $(`<div id="html_8820d2540ee542f243de96adc68791e6" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/833" target="_blank"><strong>6/833/EYNEZAT</strong></a>                     <p style="color: #555;">EYNEZAT, (Géog. mod.) ville de l'Auvergne en France ; elle est de la généralité de Riom....</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q333441" target="_blank">Ennezat</a>, commune in Puy-de-Dôme, France, Q333441</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q276406" target="_blank">canton of Ennezat</a>, canton of France (until March 2015), Q276406</p>                 </body>             </html>             </div>`)[0];
+                popup_16fc040b0efaa206520a968f2c25ce0b.setContent(html_8820d2540ee542f243de96adc68791e6);
+            
+        
+
+        marker_eed64250e9f0e534d7833edb5583df6c.bindPopup(popup_16fc040b0efaa206520a968f2c25ce0b)
+        ;
+
+        
+    
+    
+            var marker_221d5d88c5d6040d03081fb51eb2a0a2 = L.marker(
+                [48.8966, 2.33404],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_d0fbb430867bd366ac3950472c8c9b5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_221d5d88c5d6040d03081fb51eb2a0a2.setIcon(icon_d0fbb430867bd366ac3950472c8c9b5d);
+        
+    
+        var popup_277be1aa5d36068b370778adc20c2ec6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2a48e9869214269f04064c5c79587e3d = $(`<div id="html_2a48e9869214269f04064c5c79587e3d" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/1002" target="_blank"><strong>6/1002/Falaise</strong></a>                     <p style="color: #555;">Falaise, (Géog.) Falesia, ville de France dans la basse Normandie, située sur le ruisseau d'Ante, entre Caën & Seez, & bâtie par les Normans, suivant ...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q193306" target="_blank">Falaise</a>, commune in Calvados, France, Q193306</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2974654" target="_blank">cité Falaise</a>, thoroughfare in Paris, France, Q2974654</p>                 </body>             </html>             </div>`)[0];
+                popup_277be1aa5d36068b370778adc20c2ec6.setContent(html_2a48e9869214269f04064c5c79587e3d);
+            
+        
+
+        marker_221d5d88c5d6040d03081fb51eb2a0a2.bindPopup(popup_277be1aa5d36068b370778adc20c2ec6)
+        ;
+
+        
+    
+    
+            var marker_620427c3ed6e43495dc9ada228a6b9f9 = L.marker(
+                [48.47027039, 2.35065205],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_50d26fcc7bc80fa04a1da52725dd6043 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_620427c3ed6e43495dc9ada228a6b9f9.setIcon(icon_50d26fcc7bc80fa04a1da52725dd6043);
+        
+    
+        var popup_a75edb0c005776b1a9f16ef46847c3be = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_205ff3399a1017191cd664581200650c = $(`<div id="html_205ff3399a1017191cd664581200650c" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/1560" target="_blank"><strong>6/1560/FERTÉ-ALAIS (LA)</strong></a>                     <p style="color: #555;">FERTÉ-ALAIS, (LA) Géog. petite ville de l'île de France dans le Gatinois, sur le ruisseau de Juine, à 7 lieues S. de Paris. Long. 20d. 2'. lat. 48d. 2...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q821256" target="_blank">La Ferté-Alais</a>, commune in Essonne, France, Q821256</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q777442" target="_blank">canton of La Ferté-Alais</a>, canton of France (until March 2015), Q777442</p>                 </body>             </html>             </div>`)[0];
+                popup_a75edb0c005776b1a9f16ef46847c3be.setContent(html_205ff3399a1017191cd664581200650c);
+            
+        
+
+        marker_620427c3ed6e43495dc9ada228a6b9f9.bindPopup(popup_a75edb0c005776b1a9f16ef46847c3be)
+        ;
+
+        
+    
+    
+            var marker_1d270b3aeb65f8b0da83a0ade32a5bd2 = L.marker(
+                [48.186489844638, 0.63918113708496],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_3145780a20d5ffd020e7e5bc1f34a674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1d270b3aeb65f8b0da83a0ade32a5bd2.setIcon(icon_3145780a20d5ffd020e7e5bc1f34a674);
+        
+    
+        var popup_c21517db844a380318b1aadbef70d37d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5fe3959ac4dba2c4b32f65ce20a62616 = $(`<div id="html_5fe3959ac4dba2c4b32f65ce20a62616" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/1561" target="_blank"><strong>6/1561/Ferté-Bernard</strong></a>                     <p style="color: #555;">Ferté-Bernard, (Géog.) petite ville de France dans le Maine sur l'Huisne, à six lieues du Mans. Elle est la patrie de Robert Garnier poëte françois, n...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q749860" target="_blank">La Ferté-Bernard</a>, commune in Sarthe, France, Q749860</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2468105" target="_blank">Gare de La Ferté-Bernard</a>, railway station in La Ferté-Bernard, France, Q2468105</p>                 </body>             </html>             </div>`)[0];
+                popup_c21517db844a380318b1aadbef70d37d.setContent(html_5fe3959ac4dba2c4b32f65ce20a62616);
+            
+        
+
+        marker_1d270b3aeb65f8b0da83a0ade32a5bd2.bindPopup(popup_c21517db844a380318b1aadbef70d37d)
+        ;
+
+        
+    
+    
+            var marker_97533b646720699e87c0b2d8b0992e53 = L.marker(
+                [49.759511, 0.375503],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_0e500961b6e4dd5b00072ac1f4a5bb44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_97533b646720699e87c0b2d8b0992e53.setIcon(icon_0e500961b6e4dd5b00072ac1f4a5bb44);
+        
+    
+        var popup_9d8af51a733d68fd503cd31e86f170e6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_65b24d4884a3090153ea66f4c097dcb6 = $(`<div id="html_65b24d4884a3090153ea66f4c097dcb6" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/1570" target="_blank"><strong>6/1570/FESCAMP</strong></a>                     <p style="color: #555;">FESCAMP, (Géog.) Fiscamnum, petite ville de France en Normandie au pays de Caux, assez commerçante, avec un port défendu par une tour, & une ancienne ...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q269732" target="_blank">Fécamp</a>, commune in Seine-Maritime, France, Q269732</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2402132" target="_blank">Gare de Fécamp</a>, railway station in Fécamp, France, Q2402132</p>                 </body>             </html>             </div>`)[0];
+                popup_9d8af51a733d68fd503cd31e86f170e6.setContent(html_65b24d4884a3090153ea66f4c097dcb6);
+            
+        
+
+        marker_97533b646720699e87c0b2d8b0992e53.bindPopup(popup_9d8af51a733d68fd503cd31e86f170e6)
+        ;
+
+        
+    
+    
+            var marker_d40e15eaaf1210245c1ec29b22c58d91 = L.marker(
+                [44.63014957, 2.10963675],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_c826849eb9fc7bfa64e09d068a61bc15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d40e15eaaf1210245c1ec29b22c58d91.setIcon(icon_c826849eb9fc7bfa64e09d068a61bc15);
+        
+    
+        var popup_40f7c6fe1d4a72845c46787985355364 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9736e02d84d51338a41cb8739bd2838b = $(`<div id="html_9736e02d84d51338a41cb8739bd2838b" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/2054" target="_blank"><strong>6/2054/FIGEAC</strong></a>                     <p style="color: #555;">FIGEAC, (Géog.) bourg de France dans le Quercy, avec une ancienne abbaye de l'ordre de saint Benoît, fondée par le roi Pepin, où dont le monastere  fu...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q207614" target="_blank">Figeac</a>, commune in Lot, France, Q207614</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1526185" target="_blank">canton of Figeac-Est</a>, canton of France (until March 2015), Q1526185</p>                 </body>             </html>             </div>`)[0];
+                popup_40f7c6fe1d4a72845c46787985355364.setContent(html_9736e02d84d51338a41cb8739bd2838b);
+            
+        
+
+        marker_d40e15eaaf1210245c1ec29b22c58d91.bindPopup(popup_40f7c6fe1d4a72845c46787985355364)
+        ;
+
+        
+    
+    
+            var marker_e1e538bcba071853b0d78dd0e9fa407b = L.marker(
+                [49.2988437083, 3.78264083333],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_da29ad985fea7cee1be223a215c7ff6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1e538bcba071853b0d78dd0e9fa407b.setIcon(icon_da29ad985fea7cee1be223a215c7ff6a);
+        
+    
+        var popup_8351594fb9779cc7e306ac84c61386ce = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ee28e1b2ecaad2f19e4a747cc032aa88 = $(`<div id="html_ee28e1b2ecaad2f19e4a747cc032aa88" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/2265" target="_blank"><strong>6/2265/FISMES</strong></a>                     <p style="color: #555;">FISMES, ad fines, (Géogr.) ancienne petite ville de France en Champagne, remarquable par deux conciles qui s'y sont tenus ; l'un en 881, & l'autre en ...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q1214970" target="_blank">Fismes</a>, commune in Marne, France, Q1214970</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q782372" target="_blank">canton of Fismes</a>, canton of France (until March 2015), Q782372</p>                 </body>             </html>             </div>`)[0];
+                popup_8351594fb9779cc7e306ac84c61386ce.setContent(html_ee28e1b2ecaad2f19e4a747cc032aa88);
+            
+        
+
+        marker_e1e538bcba071853b0d78dd0e9fa407b.bindPopup(popup_8351594fb9779cc7e306ac84c61386ce)
+        ;
+
+        
+    
+    
+            var marker_eb20030896c610d5ae66ce06fb7dd48e = L.marker(
+                [47.511388888889, 4.5297222222222],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_b2f0637aafb8699cc8116b698f5d2822 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eb20030896c610d5ae66ce06fb7dd48e.setIcon(icon_b2f0637aafb8699cc8116b698f5d2822);
+        
+    
+        var popup_1365094711adc08f73a8417673028cbc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_17d83573e1643dffd98f36bff6888050 = $(`<div id="html_17d83573e1643dffd98f36bff6888050" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/2356" target="_blank"><strong>6/2356/FLAVIGNY</strong></a>                     <p style="color: #555;">FLAVIGNY, (Géog.) petite ville de France en Bourgogne dans l'Auxois, avec une abbaye de Bénédictins fondée par Widrard, du tems de Charles Martel. Ell...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q333734" target="_blank">Flavigny-sur-Ozerain</a>, commune in Côte-d'Or, France, Q333734</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2820434" target="_blank">Flavigny Abbey</a>, abbey located in Côte-d'Or, in France, Q2820434</p>                 </body>             </html>             </div>`)[0];
+                popup_1365094711adc08f73a8417673028cbc.setContent(html_17d83573e1643dffd98f36bff6888050);
+            
+        
+
+        marker_eb20030896c610d5ae66ce06fb7dd48e.bindPopup(popup_1365094711adc08f73a8417673028cbc)
+        ;
+
+        
+    
+    
+            var marker_d159aebaa194c402416ef1fa75b67cda = L.marker(
+                [48.63638889, -4.29416667],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_51ee7e6b91a12ceb998da37dc22ace85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d159aebaa194c402416ef1fa75b67cda.setIcon(icon_51ee7e6b91a12ceb998da37dc22ace85);
+        
+    
+        var popup_7e6b4d602322975cdef1b438f400e27c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ff3b258e46cce98d73c5b9ec0ca307a4 = $(`<div id="html_ff3b258e46cce98d73c5b9ec0ca307a4" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/2377" target="_blank"><strong>6/2377/Fleche (La)</strong></a>                     <p style="color: #555;">Fleche, (La) Géogr. en latin Fisca, Fissa, Fixa Andegavorum, petite ville de France à l'extrémité de l'Anjou vers le Maine, sur le Loir. Les Jesuites ...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q343" target="_blank">La Flèche</a>, commune in Sarthe, France, Q343</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q14545189" target="_blank">Flèche</a>, river in France, Q14545189</p>                 </body>             </html>             </div>`)[0];
+                popup_7e6b4d602322975cdef1b438f400e27c.setContent(html_ff3b258e46cce98d73c5b9ec0ca307a4);
+            
+        
+
+        marker_d159aebaa194c402416ef1fa75b67cda.bindPopup(popup_7e6b4d602322975cdef1b438f400e27c)
+        ;
+
+        
+    
+    
+            var marker_d9208f1eb675ad3b4853c0756b6c1842 = L.marker(
+                [45.03388889, 3.08972222],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_7a21bf0203d0b85474919bd25901cb91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_d9208f1eb675ad3b4853c0756b6c1842.setIcon(icon_7a21bf0203d0b85474919bd25901cb91);
+        
+    
+        var popup_807e4bf85138914610deaba77eacd76c = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2b9a91232d5abd0851e341acda71ab3f = $(`<div id="html_2b9a91232d5abd0851e341acda71ab3f" style="width: 100.0%; height: 100.0%;">             <!DOCTYPE html>             <html>             <head>             <title>Marker Popup</title>             </head>             <body>             <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/6/2490" target="_blank"><strong>6/2490/FLOUR (Saint)</strong></a>             <p style="color: #555;">FLOUR, (Saint-) Géog. petite ville de France en Auvergne, au pié du mont Cental. Elle n'est point l'Indiciacus des anciens, ni le Russium de Ptolomée ...</p>             <p> <strong> N°0 : <a href="https://www.wikidata.org/wiki/Q702330" target="_blank">arrondissement of Saint-Flour</a>, arrondissement of France, Q702330</p>             <form action="http://localhost:5000/save_annotation" method="post" target="hidden_iframe">                 <label><input type="checkbox" name="correct" value="correct"> Correct</label><br>                 <label><input type="checkbox" name="wrong" value="wrong"> Wrong</label><br>                 <label><input type="checkbox" name="abberant" value="abberant"> Abberant</label><br>                 <label for="annotation">Annotation suggérée : </label><br>                 <textarea id="annotation" name="annotation" rows="1" cols="30"></textarea><br>                 <input type="hidden" id="hash" name="hash" value="6/2490/FLOUR (Saint)">                 <label for="note">Remarque : </label><br>                 <textarea id="note" name="note" rows="1" cols="30"></textarea><br>                 <input type="submit" value="Sauvegarder">             <p><strong> Other predictions :</strong> </p>                              <p> N°1 : <a href="https://www.wikidata.org/wiki/Q247718" target="_blank">canton of Saint-Flour-Sud</a>, canton of France (until March 2015), Q247718</p>                                  <p> N°2 : <a href="https://www.wikidata.org/wiki/Q248588" target="_blank">canton of Saint-Flour-Nord</a>, canton of France (until March 2015), Q248588</p>                                  <p> N°3 : <a href="https://www.wikidata.org/wiki/Q17623141" target="_blank">canton of Saint-Flour-1</a>, canton of France, Q17623141</p>                                  <p> N°4 : <a href="https://www.wikidata.org/wiki/Q17623145" target="_blank">canton of Saint-Flour-2</a>, canton of France, Q17623145</p>                                  <p> N°5 : <a href="https://www.wikidata.org/wiki/Q56037471" target="_blank">Flour Mill</a>, heritage-listed flour mill in Milawa, Victoria, Australia, Q56037471</p>                                  <p> N°6 : <a href="https://www.wikidata.org/wiki/Q3097518" target="_blank">Gare de Saint-Flour - Chaudes-Aigues</a>, railway station in Saint-Flour, France, Q3097518</p>                                  <p> N°7 : <a href="https://www.wikidata.org/wiki/Q2942436" target="_blank">St. Peter and St. Florus Cathedral</a>, Diocese's Cathedral on Saint-Flour, Department of Cantal, in France, Q2942436</p>                                  <p> N°8 : <a href="https://www.wikidata.org/wiki/Q1224824" target="_blank">Saint-Flour-l'Étang</a>, commune in Puy-de-Dôme, France, Q1224824</p>                                  <p> N°9 : <a href="https://www.wikidata.org/wiki/Q14692579" target="_blank">Craigie Flour Mill Historical Marker</a>, place in Minnesota listed on National Register of Historic Places, Q14692579</p>                              </form>             <iframe name="hidden_iframe" style="display:none;"></iframe>             </body>             </html>             </div>`)[0];
+                popup_807e4bf85138914610deaba77eacd76c.setContent(html_2b9a91232d5abd0851e341acda71ab3f);
+            
+        
+
+        marker_d9208f1eb675ad3b4853c0756b6c1842.bindPopup(popup_807e4bf85138914610deaba77eacd76c)
+        ;
+
+        
+    
+    
+            var marker_59079462ee022db568549f7a5a39fd7f = L.marker(
+                [41.41465, 1.56334],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_e61aed0a4d196a1c7b04a1332741f91d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59079462ee022db568549f7a5a39fd7f.setIcon(icon_e61aed0a4d196a1c7b04a1332741f91d);
+        
+    
+        var popup_37dc7a52d5a176e0d068c905fc276bc7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f78b06ea658606fe7a0270b82ef90ac8 = $(`<div id="html_f78b06ea658606fe7a0270b82ef90ac8" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/7/50" target="_blank"><strong>7/50/FOIX</strong></a>                     <p style="color: #555;">FOIX, (Géog.) en latin Fuxum ; petite ville de France, capitale du comté de même nom, qui fait un gouvernement particulier dans le haut Languedoc. Ell...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q184392" target="_blank">Foix</a>, commune in Ariège, France, Q184392</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q19595398" target="_blank">Castell de Foix</a>, cultural property in Torrelles de Foix, Spain, Q19595398</p>                 </body>             </html>             </div>`)[0];
+                popup_37dc7a52d5a176e0d068c905fc276bc7.setContent(html_f78b06ea658606fe7a0270b82ef90ac8);
+            
+        
+
+        marker_59079462ee022db568549f7a5a39fd7f.bindPopup(popup_37dc7a52d5a176e0d068c905fc276bc7)
+        ;
+
+        
+    
+    
+            var marker_5de9a9edf1289371ab72331891682904 = L.marker(
+                [50.566501, 2.926292],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_7708a246c6a3b42fa72b0c9b8d70e840 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5de9a9edf1289371ab72331891682904.setIcon(icon_7708a246c6a3b42fa72b0c9b8d70e840);
+        
+    
+        var popup_2851a51888df9688f9e9a0cd3f52c369 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4c07c2c61cab0fb9d4e608def790263d = $(`<div id="html_4c07c2c61cab0fb9d4e608def790263d" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/7/177" target="_blank"><strong>7/177/FONTAINE-BLEAU</strong></a>                     <p style="color: #555;">FONTAINE-BLEAU, (Géog.) Fons Bleaudi, bourg de l'Isle de France dans le Gâtinois, remarquable  par le palais des rois de France, dont Louis le Jeune p...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q182872" target="_blank">Fontainebleau</a>, commune in Seine-et-Marne, France, Q182872</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2592273" target="_blank">La Fontaine</a>, railway station in Wavrin, France, Q2592273</p>                 </body>             </html>             </div>`)[0];
+                popup_2851a51888df9688f9e9a0cd3f52c369.setContent(html_4c07c2c61cab0fb9d4e608def790263d);
+            
+        
+
+        marker_5de9a9edf1289371ab72331891682904.bindPopup(popup_2851a51888df9688f9e9a0cd3f52c369)
+        ;
+
+        
+    
+    
+            var marker_30bfdb75c4b65c7d0842d03b8081ab71 = L.marker(
+                [46.466944444, -0.806388888],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_d86d6f47b263bfadf79d87fbc8cf0ed6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_30bfdb75c4b65c7d0842d03b8081ab71.setIcon(icon_d86d6f47b263bfadf79d87fbc8cf0ed6);
+        
+    
+        var popup_00804f7e4efed4fca49843356859bf69 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_aeccb764990e82d17e4b0a11b8e1d3d0 = $(`<div id="html_aeccb764990e82d17e4b0a11b8e1d3d0" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/7/188" target="_blank"><strong>7/188/FONTENAY-LE-COMTE</strong></a>                     <p style="color: #555;">FONTENAY-LE-COMTE, (Géog.) petite ville de France, capitale du bas Poitou, située sur la Verdée, à environ 6 lieues de la mer, à 4 lieues N. E. de la ...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q213497" target="_blank">Fontenay-le-Comte</a>, commune in Vendée, France, Q213497</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1725307" target="_blank">canton of Fontenay-le-Comte</a>, canton of France, Q1725307</p>                 </body>             </html>             </div>`)[0];
+                popup_00804f7e4efed4fca49843356859bf69.setContent(html_aeccb764990e82d17e4b0a11b8e1d3d0);
+            
+        
+
+        marker_30bfdb75c4b65c7d0842d03b8081ab71.bindPopup(popup_00804f7e4efed4fca49843356859bf69)
+        ;
+
+        
+    
+    
+            var marker_531f476753ee1f93a077021a859f06db = L.marker(
+                [50.022579, 4.3211041],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_8f8ad75a684971797f68bdb2c1a3c036 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_531f476753ee1f93a077021a859f06db.setIcon(icon_8f8ad75a684971797f68bdb2c1a3c036);
+        
+    
+        var popup_721cfef33065f5132dbffc916e708b70 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_4e427db4446f12f39ce5bda6aabf0b08 = $(`<div id="html_4e427db4446f12f39ce5bda6aabf0b08" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/7/285" target="_blank"><strong>7/285/FORGES</strong></a>                     <p style="color: #555;">FORGES, (Géog.) bourg de France dans la haute Normandie, uniquement connu par ses eaux minérales. Voyez la descrip. géog. & histor. de la haute Norm. ...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q382746" target="_blank">Forges-les-Eaux</a>, former commune in Seine-Maritime, France, Q382746</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q2295973" target="_blank">Forges</a>, section of Chimay, Belgium, Q2295973</p>                 </body>             </html>             </div>`)[0];
+                popup_721cfef33065f5132dbffc916e708b70.setContent(html_4e427db4446f12f39ce5bda6aabf0b08);
+            
+        
+
+        marker_531f476753ee1f93a077021a859f06db.bindPopup(popup_721cfef33065f5132dbffc916e708b70)
+        ;
+
+        
+    
+    
+            var marker_a36c32288b458abaf4073340f1df830e = L.marker(
+                [48.8006, 8.05595],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_99d1f5774d9c54d3180389eab05974d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a36c32288b458abaf4073340f1df830e.setIcon(icon_99d1f5774d9c54d3180389eab05974d1);
+        
+    
+        var popup_1478175b0dd2030d8f62b37eb579e71f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f81563e6c02a1c92f78047b2ed83ca7c = $(`<div id="html_f81563e6c02a1c92f78047b2ed83ca7c" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/7/364" target="_blank"><strong>7/364/Fort-Louis, (le)</strong></a>                     <p style="color: #555;">Fort-Louis, (le) Géog. Arx Ludovicia ; place forte de France, en Alsace, bâtie par Louis XIV. dans une île formée par le Rhin, à 8 lieues de Strasbour...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q21559" target="_blank">Fort-Louis</a>, commune in Bas-Rhin, France, Q21559</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q15953745" target="_blank">Église Saint-Louis de Fort-Louis</a>, church located in Bas-Rhin, in France, Q15953745</p>                 </body>             </html>             </div>`)[0];
+                popup_1478175b0dd2030d8f62b37eb579e71f.setContent(html_f81563e6c02a1c92f78047b2ed83ca7c);
+            
+        
+
+        marker_a36c32288b458abaf4073340f1df830e.bindPopup(popup_1478175b0dd2030d8f62b37eb579e71f)
+        ;
+
+        
+    
+    
+            var marker_859089b1851e9c880a4d3cdba68cd673 = L.marker(
+                [48.872, 2.41062],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_d02ed31d0f178ecce011deaf123622e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_859089b1851e9c880a4d3cdba68cd673.setIcon(icon_d02ed31d0f178ecce011deaf123622e6);
+        
+    
+        var popup_0c8aa762c90735d487077f77ed249286 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_493ef76936276a810c678169ff0a65e7 = $(`<div id="html_493ef76936276a810c678169ff0a65e7" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/7/464" target="_blank"><strong>7/464/Fougeres</strong></a>                     <p style="color: #555;">Fougeres, (Géog.) petite ville de France en Bretagne sur le Coesnon, entre Rennes, Avranches, & Dole, aux confins de la Normandie & du Maine ; son nom...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q4043" target="_blank">Fougères</a>, commune in Ille-et-Vilaine, France, Q4043</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q3451823" target="_blank">rue des Fougères</a>, street in Paris, France, Q3451823</p>                 </body>             </html>             </div>`)[0];
+                popup_0c8aa762c90735d487077f77ed249286.setContent(html_493ef76936276a810c678169ff0a65e7);
+            
+        
+
+        marker_859089b1851e9c880a4d3cdba68cd673.bindPopup(popup_0c8aa762c90735d487077f77ed249286)
+        ;
+
+        
+    
+    
+            var marker_1286616384a070f576b5c41f3d012fe0 = L.marker(
+                [43.447222222, 3.755555555],
+                {}
+            ).addTo(map_0e34b2f18349782d9838682f0363a2dd);
+        
+    
+            var icon_3aaf68fc28958496763d0f092b23f1b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1286616384a070f576b5c41f3d012fe0.setIcon(icon_3aaf68fc28958496763d0f092b23f1b3);
+        
+    
+        var popup_a54c32cb54745ce2d3a9ce0ccd1da8e1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_1d68ed1ee3db1eed92d2e7c263e6af2a = $(`<div id="html_1d68ed1ee3db1eed92d2e7c263e6af2a" style="width: 100.0%; height: 100.0%;">             <html>                 <body>                     <a href="https://artflsrv04.uchicago.edu/philologic4.7/encyclopedie0922/navigate/7/1002" target="_blank"><strong>7/1002/FRONTIGNAN</strong></a>                     <p style="color: #555;">FRONTIGNAN, (Géog.) petite ville de France. au Bas-Languedoc, connue par ses excellens vins muscats, & ses raisins de caisse qu'on appelle passerilles...</p>                     <p><strong>GOLD :</strong> <a href="https://www.wikidata.org/wiki/Q216280" target="_blank">Frontignan</a>, commune in Hérault, France, Q216280</p>                     <p><strong>N°0 : <a href="https://www.wikidata.org/wiki/Q1725333" target="_blank">canton of Frontignan</a>, canton of France, Q1725333</p>                 </body>             </html>             </div>`)[0];
+                popup_a54c32cb54745ce2d3a9ce0ccd1da8e1.setContent(html_1d68ed1ee3db1eed92d2e7c263e6af2a);
+            
+        
+
+        marker_1286616384a070f576b5c41f3d012fe0.bindPopup(popup_a54c32cb54745ce2d3a9ce0ccd1da8e1)
+        ;
+
+        
+    
+</script>
+</html>

@@ -5,8 +5,10 @@ app = Flask(__name__)
 
 @app.route('/save_annotation', methods=['POST'])
 def save_annotation():
-    annotation = request.form['text']
+    annotation = request.form['annotation']
     hash_value = request.form['hash']
+    note = request.form['note']
+    choice = request.form['choice']
     correct = 'True' if 'correct' in request.form else None
     wrong = 'False' if 'wrong' in request.form else None
     abberant = 'abberant' if 'abberant' in request.form else None
@@ -16,6 +18,7 @@ def save_annotation():
         'correct': correct,
         'wrong': wrong,
         'abberant': abberant
+        'note': note,
     }
     # first check if the file exists
     try:

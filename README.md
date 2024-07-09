@@ -15,23 +15,25 @@ python app.py
 ```
 
 **Inputs**
-- `Annotation Text`: A text area in the popup where users can enter their annotations.
-- `Tickboxes`: Three checkboxes in the popup allowing users to mark the annotation as: Correct, Wrong, Aberant
-- `Hash Value`: A predefined hidden input field with a specific hash value associated with each annotation.
+- 
 
 **Output** :The annotations, along with the hash value and the state of each checkbox (correct, wrong, abberant), are sent to the Flask server upon form submission. The server saves the collected data in a json file (annotations.json) in the following format:
 ```json
 {
-   "8/252/HAMIZ-MUTAGARA": {
-      "annotation": "test",
-      "correct": null,
-      "wrong": "False",
-      "abberant": "aberant"
+   "8/252/HAMIZ-MUTAGARA": {  # hidden hash value of the sample
+      "annotation": "test",   # annotation text provided by the user
+      "correct": null,        # 1st tickbox option
+      "wrong": "False",       # 2nd 
+      "abberant": "aberant",  # 3rd
+      "note": "mispelled ?"   # note provided by the user
    }
 }
 ```
-
-
+**TODO**
+- [X] inserting `def retrieve_info(QID)` collecting label and description from WD
+- [X] display top 10 suggestions at the end
+- [ ] `def retrieve_info(QID)` from SOLR 
+- [ ] add metadatas to annotation file : as input of app.py ? 
 
 
 
