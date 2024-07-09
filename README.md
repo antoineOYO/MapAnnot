@@ -14,10 +14,26 @@ python map_with_annotation.py ;
 python app.py
 ```
 
-**Inputs**
-- 
+## Inputs
+The input is a dict of predictions from the Entity Linking pipeline. At the key `pred_id`, we find a list of the top 10 predictions :
+```json
+{
+  "test_france": [
+    {
+      "rank": 0,
+      "pred_id": "Q3390498",
+      "pred_coords": [48.8458, 2.37243],
+      "acc@10": false,
+      "label": ["place des Combattants-en-Afrique-du-Nord"],
+      "desc": "place de Paris, France"
+    },
+    ...
+  ]
+}
+```
 
-**Output** :The annotations, along with the hash value and the state of each checkbox (correct, wrong, abberant), are sent to the Flask server upon form submission. The server saves the collected data in a json file (annotations.json) in the following format:
+## OUtputs
+The annotations, along with the hash value and the state of each checkbox (correct, wrong, abberant), are sent to the Flask server upon form submission. The server saves the collected data in a json file (annotations.json) in the following format:
 ```json
 {
    "8/252/HAMIZ-MUTAGARA": {  # hidden hash value of the sample
@@ -37,4 +53,4 @@ python app.py
 
 
 
-![Alt text](images/exemple.png)
+![Alt text](images/example.png)
